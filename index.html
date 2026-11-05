@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120e">
+  <meta name="description" content="Equipo para jugar, entrenar y disfrutar. Explora réplicas recreativas, protección y accesorios en Arsenal Games.">
+  <title>Arsenal Games — Juega a tu manera</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>Equipo para jugar. Seguridad para disfrutar.</span>
+    <span class="announcement-note">Envíos a todo el país · Compra segura</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Arsenal Games, inicio">
+      <img class="brand-logo" src="img/Logotipo.png" alt="Arsenal Games">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Tienda</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#nosotros">Quiénes somos</a>
+    </nav>
+
+    <div class="header-actions">
+      <label class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m16 16 4.2 4.2"/></svg>
+        <input id="search-input" type="search" placeholder="Buscar equipo..." aria-label="Buscar productos">
+      </label>
+      <button class="cart-button" type="button" aria-label="Carrito, 0 productos">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO PS4: carrusel de armas ===== -->
+    <section class="hero" id="hero" aria-roledescription="carrusel" aria-label="Armas destacadas">
+      <div class="hero-track"></div>
+      <div class="hero-controls">
+        <button class="hero-arrow" type="button" data-dir="-1" aria-label="Arma anterior">←</button>
+        <div class="hero-dots" role="tablist" aria-label="Seleccionar arma"></div>
+        <button class="hero-arrow" type="button" data-dir="1" aria-label="Arma siguiente">→</button>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="nosotros" aria-labelledby="about-title">
+      <div class="about-copy"><p class="eyebrow dark-eyebrow">ARSENAL GAMES</p><h2 id="about-title">Una escuadra<br>creativa.</h2><p>Somos una marca dedicada a convertir la imaginación en equipo tangible. Diseñamos piezas decorativas y recreativas que acompañan a cosplayers, coleccionistas y comunidades de juego.</p><p class="about-note">Cada modelo es no funcional y está pensado para disfrutarse de forma responsable.</p></div>
+      <div class="about-mark"><img src="img/Lancer.png" alt="Réplica Lancer de Arsenal Games"></div>
+    </section>
+
+    <section class="philosophy-section" aria-labelledby="philosophy-title">
+      <div class="philosophy-image"><img src="img/Raygun.png" alt="Raygun de Arsenal Games"></div>
+      <div class="philosophy-copy"><p class="eyebrow dark-eyebrow">NUESTRA FILOSOFÍA</p><h2 id="philosophy-title">Jugar seguro,<br><em>imaginar más.</em></h2><p>Creemos que una buena partida nace de la creatividad y el respeto. Por eso combinamos color, nostalgia y diseño de utilería para que cada personaje tenga una pieza memorable sin perder de vista el cuidado del entorno.</p><a class="button button-lime" href="#catalogo">Explorar el arsenal <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="category-section section-wrap" id="categorias">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">ENCUENTRA TU ESTILO</p><h2>¿Qué te hace falta?</h2></div>
+        <a class="text-link dark-link" href="#catalogo">Ver todo el equipo <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="category-list">
+        <a class="category-card category-airsoft" href="#catalogo" data-category-link="Réplicas">
+          <span class="category-index">01</span><span class="category-symbol">◉</span><span class="category-name">Réplicas <span>Airsoft y más</span></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card category-protection" href="#catalogo" data-category-link="Protección">
+          <span class="category-index">02</span><span class="category-symbol">⌑</span><span class="category-name">Protección <span>Juega con confianza</span></span><span class="category-arrow">↗</span>
+        </a>
+        <a class="category-card category-accessories" href="#catalogo" data-category-link="Accesorios">
+          <span class="category-index">03</span><span class="category-symbol">⌁</span><span class="category-name">Accesorios <span>Los detalles importan</span></span><span class="category-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-wrap">
+        <div class="section-heading catalog-heading">
+          <div><p class="eyebrow dark-eyebrow">SELECCIÓN ARSENAL</p><h2>Favoritos de la comunidad</h2></div>
+          <span class="catalog-count" id="catalog-count">04 PRODUCTOS</span>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filtrar productos">
+          <button class="filter-button active" type="button" data-filter="Todos">Todo el equipo <span>04</span></button>
+          <button class="filter-button" type="button" data-filter="Réplicas">Réplicas</button>
+          <button class="filter-button" type="button" data-filter="Protección">Protección</button>
+          <button class="filter-button" type="button" data-filter="Accesorios">Accesorios</button>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="Réplicas" data-name="Raygun mk1">
+            <div class="product-visual visual-marker">
+              <span class="product-badge">MÁS VENDIDO</span>
+              <button class="favorite-button" type="button" aria-label="Guardar Raygun mk1">♡</button>
+              <a class="source-image-link" href="img/Raygun.png" target="_blank" rel="noopener" aria-label="Abrir imagen original de Raygun"><img src="img/Raygun.png" alt="Raygun original"></a>
+              <svg viewBox="0 0 420 250" aria-hidden="true"><g transform="translate(20 30) rotate(-8 200 100)" stroke="#171914" stroke-width="5" stroke-linejoin="round"><path fill="#34372e" d="M46 83h96l21 16h79v23h-84l-21-14H46z"/><path fill="#24271f" d="M234 91h83l28-20h36l9 15-39 16-28 25h-89z"/><path fill="#161813" d="m380 82 28 3v15l-29 1z"/><path fill="#22241d" d="m250 122 39 4-10 48-19 18-22-8 13-38-16-9z"/><path fill="#4a4b3b" d="m264 174 31 5 14 31-11 6-20-20-29-4z"/><path fill="#9b9611" d="m58 83 7-20 31 2 14 18z"/><path fill="#737466" d="m175 75 37-6 10 23-15 9-33-6z"/></g></svg>
+              <span class="visual-caption">VECTOR / S1</span>
+            </div>
+            <div class="product-info"><div><p class="product-category">RÉPLICA RECREATIVA</p><h3>Raygun mk1</h3></div><strong class="product-price">$ 2,490</strong></div>
+            <button class="add-button" type="button" data-product="Raygun mk1">Añadir al carrito <span>+</span></button>
+          </article>
+
+          <article class="product-card" data-category="Réplicas" data-name="Arpón Scorpion">
+            <div class="product-visual visual-mask">
+              <span class="product-badge badge-new">NUEVO</span>
+              <button class="favorite-button" type="button" aria-label="Guardar Arpón Scorpion">♡</button>
+              <a class="source-image-link" href="img/Arpon.png" target="_blank" rel="noopener" aria-label="Abrir imagen original de Arpón Scorpion"><img src="img/Arpon.png" alt="Arpón Scorpion"></a>
+              <svg viewBox="0 0 420 250" aria-hidden="true"><g transform="translate(105 23)" stroke="#191a15" stroke-width="7" stroke-linejoin="round"><path fill="#494c40" d="M104 16c44 0 83 16 96 52l-10 75-42 45-44 13-46-13-42-45-10-75c13-36 52-52 98-52Z"/><path fill="#171914" d="M44 74c18-21 38-28 60-28s42 7 60 28l-8 42-53 11-53-11z"/><path fill="#9b9611" d="m55 77 48 8 48-8-7 29-41 8-41-8z"/><path fill="#292b24" d="m84 131 20 7 20-7 9 25-29 20-29-20z"/><path fill="none" d="M17 70 0 59m191 11 17-11"/><path fill="none" stroke="#888878" stroke-width="3" d="M64 87h79m-39-40v36"/></g></svg>
+              <span class="visual-caption">PROTECCIÓN / V-02</span>
+            </div>
+            <div class="product-info"><div><p class="product-category">RÉPLICA RECREATIVA</p><h3>Arpón Scorpion</h3></div><strong class="product-price">$ 890</strong></div>
+            <button class="add-button" type="button" data-product="Arpón Scorpion">Añadir al carrito <span>+</span></button>
+          </article>
+
+          <article class="product-card" data-category="Accesorios" data-name="Lancer">
+            <div class="product-visual visual-vest">
+              <button class="favorite-button" type="button" aria-label="Guardar Lancer">♡</button>
+              <a class="source-image-link" href="img/Lancer.png" target="_blank" rel="noopener" aria-label="Abrir imagen original de Lancer"><img src="img/Lancer.png" alt="Lancer original"></a>
+              <svg viewBox="0 0 420 250" aria-hidden="true"><g transform="translate(112 18)" stroke="#171914" stroke-width="6" stroke-linejoin="round"><path fill="#4b4d40" d="m56 15 38 14 38-14 40 28-17 42-12 102H45L33 85 16 43z"/><path fill="#35382e" d="m65 30 29 9 29-9 12 23-12 17H65L53 53z"/><path fill="#25271f" d="M48 80h92v86H48z"/><path fill="#626353" d="M53 88h34v37H53zm48 0h34v37h-34zm-48 48h34v24H53zm48 0h34v24h-34z"/><path fill="#9b9611" d="M91 39h12v31H91z"/><path fill="none" stroke="#aaa78b" stroke-width="3" d="M61 97h18m30 0h18m-66 48h18m30 0h18"/></g></svg>
+              <span class="visual-caption">EQUIPO / LANCEP</span>
+            </div>
+            <div class="product-info"><div><p class="product-category">ACCESORIOS</p><h3>Lancer</h3></div><strong class="product-price">$ 1,350</strong></div>
+            <button class="add-button" type="button" data-product="Lancer">Añadir al carrito <span>+</span></button>
+          </article>
+
+          <article class="product-card" data-category="Réplicas" data-name="Exilio">
+            <div class="product-visual visual-kit">
+              <span class="product-badge badge-limited">NUEVO</span>
+              <button class="favorite-button" type="button" aria-label="Guardar Exilio">♡</button>
+              <a class="source-image-link" href="img/Exilio.png" target="_blank" rel="noopener" aria-label="Abrir imagen original de Exilio"><img src="img/Exilio.png" alt="Espadas del Exilio"></a>
+              <svg viewBox="0 0 420 250" aria-hidden="true"><g transform="translate(69 35)" stroke="#171914" stroke-width="5" stroke-linejoin="round"><path fill="#484b3e" d="M20 53h104v111H20z"/><path fill="#292b24" d="M31 67h82v20H31zm0 30h82v54H31z"/><path fill="#777968" d="M42 105h60v34H42z"/><path fill="#9b9611" d="M57 42h32v11H57z"/><path fill="#383b31" d="m158 78 57-15 32 19-9 53-58 15-32-20z"/><path fill="#21231d" d="m173 88 47-12 16 10-7 38-46 12-17-10z"/><circle cx="298" cy="111" r="42" fill="#45483d"/><circle cx="298" cy="111" r="25" fill="#191a15"/><circle cx="298" cy="111" r="12" fill="#9b9611"/><path fill="none" stroke="#aaa78b" stroke-width="3" d="M298 76v15m0 40v15m-35-35h15m40 0h15"/></g></svg>
+              <span class="visual-caption">KIT / LISTO PARA JUGAR</span>
+            </div>
+            <div class="product-info"><div><p class="product-category">RÉPLICA RECREATIVA</p><h3>Exilio</h3></div><strong class="product-price">$ 1,190</strong></div>
+            <button class="add-button" type="button" data-product="Exilio">Añadir al carrito <span>+</span></button>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos equipo con esa búsqueda. Prueba otro término.</p>
+      </div>
+    </section>
+
+    <section class="safety-banner" id="seguridad">
+      <div class="safety-icon" aria-hidden="true">✓</div>
+      <div><p class="eyebrow">PRIMERO, JUEGA SEGURO</p><h2>La mejor partida es la que todos disfrutan.</h2><p>Usa siempre protección adecuada y sigue las normas de tu campo de juego. Nuestros productos son recreativos.</p></div>
+      <a class="button button-outline" href="#catalogo">Encuentra tu equipo <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#" aria-label="Arsenal Games, inicio"><img class="brand-logo" src="img/Logotipo.png" alt="Arsenal Games"></a>
+    <p>Equipo recreativo. Juego responsable.</p>
+    <span class="copyright">© 2026 ARSENAL GAMES</span>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
